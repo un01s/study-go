@@ -33,6 +33,7 @@ func testTwoSumFunc(i input, o output) func(*testing.T) {
     actual := twoSum(i.nums, i.target)
     expected := o.answer
     if !reflect.DeepEqual(actual, expected) {
+    //if actual != expected {
       t.Error(fmt.Printf("Expected %v but get %v!", expected, actual))
     }
   }
